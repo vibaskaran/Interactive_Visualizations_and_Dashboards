@@ -1,1 +1,1 @@
-web: python FlaskBiodiversityApp.py
+web: python FlaskBiodiversityApp.app
