@@ -1,1 +1,1 @@
-worker: python FlaskBiodiversityApp.py
+web: python FlaskBiodiversityApp.py
