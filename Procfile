@@ -1,1 +1,1 @@
-worker: python FlaskBiodiversityApp.py
+web: gunicorn FlaskBiodiversityApp:app
