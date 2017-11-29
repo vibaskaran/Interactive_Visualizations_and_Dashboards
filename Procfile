@@ -1,1 +1,1 @@
-web: gunicorn FlaskBiodiversityApp:app
+web: gunicorn app:app
