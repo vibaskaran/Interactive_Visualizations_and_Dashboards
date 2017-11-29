@@ -167,17 +167,10 @@ def samples(sample):
 def welcome1():
     return render_template("index.js")
 
-@app.route("/data.js")
-def welcome2():
-    return render_template("data.js")
-
 @app.route("/metadata/index.js")
 def md_welcome1():
     return render_template("index.js")
 
-@app.route("/metadata/data.js")
-def md_welcome2():
-    return render_template("data.js")
 
 
 
