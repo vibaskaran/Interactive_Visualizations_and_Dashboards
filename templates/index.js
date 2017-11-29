@@ -18,7 +18,7 @@ function addDropdown() {
   
   // Get the list of sample names and put into an array
   sampleNames = [];
-  queryURL = 'http://localhost:5000/names';
+  queryURL = 'https://webdashboard-01.herokuapp.com/names';
 
   // Take url response and assign it to the sampleNames array
   d3.json(queryURL, function (error, response) {
@@ -120,7 +120,7 @@ function updatePlots(newdata) {
   otuDescAll  = [];
 
   // Get the description of otu_id from the otu url/endpoint
-  queryURL = 'http://localhost:5000/otu';
+  queryURL = 'https://webdashboard-01.herokuapp.com/otu';
 
 
   d3.json(queryURL, function (error, response) {
@@ -255,7 +255,7 @@ function optionChanged(selectedOption) {
     console.log("inside optionChanged()");
 
     // Get metadata information for the specific sample from the metadata url/endpoint
-    queryURL1 = 'http://localhost:5000/metadata/' + selectedOption;
+    queryURL1 = 'https://webdashboard-01.herokuapp.com/metadata/' + selectedOption;
     metaDataInfo = "";
   
     d3.json(queryURL1, function (error, response) {
@@ -281,7 +281,7 @@ function optionChanged(selectedOption) {
 
   // Get list of otu_id's and corresponding sample_count's for the specific sample 
   // from the samples url/endpoint
-  queryURL2 = 'http://localhost:5000/samples/' + selectedOption;
+  queryURL2 = 'https://webdashboard-01.herokuapp.com/samples/' + selectedOption;
   otuIdAndSampleCount = [];
 
   d3.json(queryURL2, function (error, response) {
@@ -299,7 +299,7 @@ function optionChanged(selectedOption) {
 
 
   // Get washing frequency for the specific sample from the wfreq url/endpoint
-  queryURL3 = 'http://localhost:5000/wfreq/' + selectedOption;
+  queryURL3 = 'https://webdashboard-01.herokuapp.com/wfreq/' + selectedOption;
   washFreq = "";
 
   d3.json(queryURL3, function (error, response) {
